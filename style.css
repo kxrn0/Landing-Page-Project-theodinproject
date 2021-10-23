@@ -234,6 +234,11 @@ body {
     filter: invert(60%) sepia(10%) saturate(4229%) hue-rotate(47deg) brightness(95%) contrast(93%);
 }
 
+footer p a {
+    text-decoration: none;
+    color: #ccc;
+}
+
 /* .footer img:hover {
     background: rgb(136, 165, 92);
     box-shadow: 0 0 20px rgb(136, 165, 92);
