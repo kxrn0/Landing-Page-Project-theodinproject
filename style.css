@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(239, 240, 243);
+}
+
+/* header */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background: #d3d7db;
+    padding: 20px 250px;
+}
+
+.header-logo {
+    width: 150px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-nav {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-nav a {
+    color: rgb(165, 0, 0);
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.header-content img {
+    width: 750px;
+}
+
+.header-content {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-content-text {
+    width: 500px;
+}
+
+.header-content-text h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #000a04;
+}
+
+.header-content-text p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin-top: 20px;
+}
+
+.monero-butt {
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 32px;
+    background: rgb(204, 4, 4);
+    color: azure;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 51%);
+}
+
+.monero-butt:active {
+    border: 2px solid rgb(241, 199, 199);
+    background: rgb(204, 10, 10);
+}
+
+/* information */
+
+.information {
+    background: linear-gradient(rgb(247, 246, 243) 25%, rgb(223, 163, 163));
+    padding-bottom: 200px;
+}
+
+.information h2 {
+    text-align: center;
+    margin: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.information img {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.images div {
+    width: 200px;
+    text-align: center;
+}
+
+.images img {
+    border: 5px solid rgb(112, 112, 243);
+    border-radius: 10px;
+}
+
+.images p {
+    margin-top: 20px;
+}
+
+/* testimonials */
+
+.testimonials {
+    background: rgb(231, 227, 227);
+}
+
+.testi-text {
+    width: 900px;
+    font-size: 32px;
+    font-style: italic;
+    color: #1f2937;
+    margin: 150px auto;
+    line-height: 1.3em;
+}
+
+.break {
+    display: block;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.author {
+    font-style: normal;
+    margin-top: 35px;
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* cause */
+
+.cause {
+    margin: 100px 300px;
+}
+
+.message {
+    border-radius: 10px;
+    color: azure;
+    padding: 50px 100px;
+    background: rgb(223, 104, 25);
+    display: flex;
+    justify-content: space-between;
+}
+
+.message p:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.message div p:nth-of-type(1) {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.message div p:nth-of-type(2) {
+    font-size: 19px;
+}
+
+.join-button {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgb(223, 104, 25);
+    border: 3px solid rgb(229, 229, 240);
+    border-radius: 10px;
+    color: rgb(229, 229, 240);
+    text-decoration: none;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.join-button:active {
+    border-color: rgb(212, 120, 120);
+}
+
+.sign-up-button:active {
+    background:rgb(167, 15, 15);
+    border-color: black;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    padding: 50px;
+    color:rgb(231, 227, 227);
+    background:rgb(80, 65, 65);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+}
+
+.footer img {
+    margin: 25px;
+    width: 50px;
+    filter: invert(60%) sepia(10%) saturate(4229%) hue-rotate(47deg) brightness(95%) contrast(93%);
+}
+
+/* .footer img:hover {
+    background: rgb(136, 165, 92);
+    box-shadow: 0 0 20px rgb(136, 165, 92);
+} */
+
+/* modal bideo */
+
+.modal-video {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgb(24, 2, 2, 0.5);
+}
+
+.modal-elements {
+    margin: 10% auto;
+    width: 900px;
+    height: 500px;
+    background: rgb(0, 0, 0);
+    position: relative;
+}
+
+.close {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: rgb(206, 206, 221);
+}
+
+.video {
+    padding: 10px 23px;
+}
